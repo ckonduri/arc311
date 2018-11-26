@@ -32,7 +32,7 @@ If you recall, we enabled VPC flow logs in Lab 1.  We can now query these logs u
 	PARTITIONED BY (dt string)
 	ROW FORMAT DELIMITED
 	FIELDS TERMINATED BY ' '
-	LOCATION 's3://REPLACE-WITH-YOUR-BUCKET-NAME/prefix/AWSLogs/REPLACE-WITH-YOUR-ACCOUNT-ID/vpcflowlogs/YOUR-REGION-CODE/'
+	LOCATION 's3://REPLACE-WITH-YOUR-BUCKET-NAME/AWSLogs/REPLACE-WITH-YOUR-ACCOUNT-ID/vpcflowlogs/YOUR-REGION-CODE/'
 	TBLPROPERTIES ("skip.header.line.count"="1");
 	
 	```
